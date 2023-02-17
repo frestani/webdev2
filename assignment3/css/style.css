@@ -43,11 +43,19 @@ nav section {
 }
 
 .mobile {
-    background: green;
+    color: green;
+    visibility: visible;
+    width: auto;
+    height: auto;
+    padding: 5em;
+    
 }
 
 .desktop {
-    background: orange;
+    color: red;
+    visibility: hidden;
+    width: auto;
+    height: auto;
 }
 
 
@@ -92,6 +100,14 @@ You can adjust the min-width numbers below, and add as many new media queries as
 @media all and (min-width: 481px) {
 	
 	
+    .desktop {
+        visibility: hidden;
+    }
+
+    .mobile {
+        visibility: visible;
+    }
+    
 	
 	
 } /* closes 481px+ */
@@ -106,11 +122,12 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	}
 
 	.mobile {
-        display: none;
+        visibility: hidden;
     }
     
     .desktop {
-        display: block;
+        visibility: visible;
+        
     }	
 
     nav {
@@ -131,6 +148,14 @@ You can adjust the min-width numbers below, and add as many new media queries as
 @media all and (min-width: 1024px) {
 	nav section {
         flex: 0 1 32%;
+    }
+
+    .mobile {
+        visibility: hidden;
+    }
+
+    .desktop {
+        visibility: visible;
     }
 	
 	
