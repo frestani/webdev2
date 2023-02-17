@@ -63,10 +63,11 @@ nav section {
 }
 
 .desktop {
-    color: rgb(255, 0, 221);
+    color: rgb(167, 3, 145);
     visibility: hidden;
     width: auto;
     height: auto;
+    padding: 5em;
 }
 
 
