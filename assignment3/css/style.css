@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+:root {
+    --color-body-text: #540c72;
+    --color-body-bg: rgb(230, 177, 224);
+    --color-header-bg: rgb(219, 206, 27);
+    --color-footer-bg: rgb(170, 141, 24);
+}
+
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
 	margin:0px;
@@ -15,9 +24,11 @@ html {
 
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
-
+header {
+    background-color: var(--color-header-bg);
+}
 body {
-	
+	font-family: 'Zeyada', cursive;
 	
 }
 
