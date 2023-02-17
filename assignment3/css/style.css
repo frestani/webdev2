@@ -38,6 +38,9 @@ body {
 	margin:auto;
 }
 
+section {
+    background-color: rgb(35, 204, 223);
+}
 
 
 figure {
@@ -49,7 +52,7 @@ figure img {
 }
 
 nav section {
-	border:1px solid rgb(35, 204, 223);
+	border:1px solid rgb(35, 154, 223);
     margin-bottom: 15px;
 }
 
