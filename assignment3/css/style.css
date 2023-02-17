@@ -29,7 +29,7 @@ header {
 }
 body {
 	font-family: 'Zeyada', cursive;
-	
+	background-color: var(--color-body-bg);
 }
 
 
@@ -49,12 +49,12 @@ figure img {
 }
 
 nav section {
-	border:1px solid black;
+	border:1px solid rgb(35, 204, 223);
     margin-bottom: 15px;
 }
 
 .mobile {
-    color: green;
+    color: rgb(78, 7, 221);
     visibility: visible;
     width: auto;
     height: auto;
@@ -63,7 +63,7 @@ nav section {
 }
 
 .desktop {
-    color: red;
+    color: rgb(255, 0, 221);
     visibility: hidden;
     width: auto;
     height: auto;
