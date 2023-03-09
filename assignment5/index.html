@@ -16,29 +16,32 @@
         </figure>
     </section>
     
-    <section>
+    <section id="hidden-1">
         <figure class="blink-lyrics">
             <img src="img/blink-lyrics-ds-lite.JPG" alt="lyrics on a DS Lite" style="width:50%">
             <figcaption>Blink-182 Lyrics on a Nintendo DS Lite</figcaption>
         </figure>
-        <button id="btn-1">Art</button>
+        
     </section>
+    <button id="btn-1">Art</button>
     
-    <section>
+    <section id="hidden-2">
         <figure class="broken-ds">
             <img src="img/broken-ds-lite.JPG" alt="broken DS Lite" style="width:50%">
             <figcaption>A broken Nintendo DS Lite</figcaption>
         </figure>
-        <button id="btn-2">Sadness</button>
+        
     </section>
+    <button id="btn-2">Sadness</button>
     
-    <section>
+    <section id="hidden-3">
         <figure class="modded-gba">
             <img src="img/modded-gba.JPG" alt="modded GBA"style="width:50%">
             <figcaption>A Nintendo GameBoy Advance with a modded backlit screen</figcaption>
         </figure>
-        <button id="btn-3">Upgrade</button>
+        
     </section>
+    <button id="btn-3">Upgrade</button>
     
 
 
@@ -50,6 +53,28 @@
   <!-- Write your jQuery code inside of the .ready() function below -->
   <script>
 $(document).ready(function() {
+
+    $('#hidden-1').hide();
+
+    $('#btn-1').click(function() {
+        $('#hidden-1').show();
+    }); //close .click()
+
+
+    $('#hidden-2').hide();
+
+    $('#btn-2').click(function() {
+        $('#hidden-2').show();
+    }); //close .click()
+
+
+    $('#hidden-3').hide();
+
+    $('#btn-3').click(function() {
+        $('#hidden-3').show();
+    }); //close .click()
+
+    
 
 
 
