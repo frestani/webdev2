@@ -1,0 +1,66 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+body {
+
+}
+
+#container {
+    height: 100%;
+}
+
+#img1, #img2, #img3 {
+    height: 100%;
+}
+
+#img1 {
+    background:url('../img/hearing-devices.jpg') fixed center no-repeat;
+    background-size: cover;
+}
+
+#img2 {
+    background:url('../img/deaf-culture-textbooks.jpg') fixed center no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+#img1 {
+    background:url('../img/deaf-culture-timeline.jpg') fixed center no-repeat;
+    background-size: cover;
+}
+
+/* ========================================
+MEDIA QUERIES!
+======================================== */
+
+/* New CSS for tablet sizes.
+You can change the pixel number below */
+@media all and (min-width: 768px) {
+	
+	
+	
+	
+} /* closes 768px+ */
+
+
+
+
+/* New CSS for desktop sizes.
+You can change the pixel number below */
+@media all and (min-width: 1024px) {
+	
+	
+	
+	
+} /* closes 1024px+ */
