@@ -67,13 +67,13 @@ $(window).scroll(function() {
 
 
 	//detect position of particular element to trigger a function
-	var elementOffset = $('#one').offset().top;
+	var elementOffset = $('#paragraph1').offset().top;
 	var currentElementOffset = (elementOffset - windowPosition);
 	
 	if (currentElementOffset<40) {
-		$('#cat2 h1').fadeOut();
+		$('#img2 h2').fadeOut();
 	} else {
-		$('#cat2 h1').fadeIn();
+		$('#img2 h2').fadeIn();
 	}//close if/else statement
 	
 	
