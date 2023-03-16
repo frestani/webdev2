@@ -11,12 +11,13 @@ html {
     line-height: 1.4em;
 }
 
-body {
-    height: 100%;
+header {
+    text-align: center;
+    padding: 4rem;
 }
 
-#container {
-    height: 100%;
+#paragraph1, #paragraph2, #paragraph3 {
+    padding: 3rem;
 }
 
 #img1, #img2, #img3 {
@@ -40,6 +41,11 @@ body {
     background-size: cover;
 }
 
+footer {
+    text-align: center;
+    padding: 2rem;
+}
+
 /* ========================================
 MEDIA QUERIES!
 ======================================== */
@@ -47,7 +53,9 @@ MEDIA QUERIES!
 /* New CSS for tablet sizes.
 You can change the pixel number below */
 @media all and (min-width: 768px) {
-	
+	#paragraph1, #paragraph2, #paragraph3 {
+        padding: 2rem;
+    }
 	
 	
 	
@@ -59,7 +67,9 @@ You can change the pixel number below */
 /* New CSS for desktop sizes.
 You can change the pixel number below */
 @media all and (min-width: 1024px) {
-	
+	#paragraph1, #paragraph2, #paragraph3 {
+        padding: 5rem;
+    }
 	
 	
 	
