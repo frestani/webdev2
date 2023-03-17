@@ -44,12 +44,10 @@ $(window).scroll(function() {
 	var windowPosition = $(window).scrollTop();
 
   if (windowPosition>900 && windowPosition<2500) {
-    $('section').addClass(newFont);
-    $('section').addClass(newFontSize);
+    $('section').addClass('newFont');
   }
   else {
-    $('section').removeClass(newFont);
-    $('section').removeClass(newFontSize);
+    $('section').removeClass('newFont');
   }
 
   if (windowPosition>600 && windowPosition<2500) {
