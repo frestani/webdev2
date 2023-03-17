@@ -39,15 +39,18 @@
 
 //allow scroll detection in realtime
 $(window).scroll(function() {
+  $('section').hide();
 
 	//This will detect how far the top of the window is from the top of the document
 	var windowPosition = $(window).scrollTop();
 
   if (windowPosition>900 && windowPosition<2500) {
     $('section').addClass('newFont');
+    $('section').hide('slow', 'linear');
   }
   else {
     $('section').removeClass('newFont');
+    $('section').show('fast', 'linear');
   }
 
   if (windowPosition>600 && windowPosition<2500) {
@@ -57,6 +60,8 @@ $(window).scroll(function() {
   else {
     $('#paragraph1').css("background", "white");
   }
+
+
 
 });//close .scroll()
    });//close .ready()
