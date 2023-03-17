@@ -1,65 +1,99 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
-	margin:0px;
-	padding:0px;
-	height:100%;
+    margin:0px;
+    padding:0px;
+    height:100%;
 }
 
+
 html {
-		/* Standard text-settings below */
-	font-size: 1em;
+        /* Standard text-settings below */
+    font-size: 1em;
     line-height: 1.4em;
 }
+
 
 header {
     text-align: center;
     padding: 4rem;
 }
 
+.newFont {
+    font-family: "Arial, sans-serif";
+}
+
+.newFontSize {
+    font-size: 50px;
+}
+
+/*section {
+    background-color: blueviolet;
+    animation-name: color-change;
+    animation-duration: 4s;
+}
+
+@keyframes color-change {
+    from {background-color: blueviolet;}
+    to {background-color: peachpuff;}
+
+}*/
+
 #paragraph1, #paragraph2, #paragraph3 {
     padding: 3rem;
 }
 
+
 #img1, #img2, #img3 {
-    height: 100%;
+    height: 250px;
 }
+
 
 #img1 {
     background:url('../img/hearing-devices.jpg') fixed center no-repeat;
     background-size: cover;
 }
 
+
 #img2 {
     background:url('../img/deaf-culture-textbooks.jpg') fixed center no-repeat;
     background-size: cover;
 
+
     position: relative;
 }
+
 
 #img3 {
     background:url('../img/deaf-culture-timeline.jpg') fixed center no-repeat;
     background-size: cover;
 }
 
+
 footer {
     text-align: center;
     padding: 2rem;
 }
 
+
 /* ========================================
 MEDIA QUERIES!
 ======================================== */
 
+
 /* New CSS for tablet sizes.
 You can change the pixel number below */
 @media all and (min-width: 768px) {
-	#paragraph1, #paragraph2, #paragraph3 {
+    #paragraph1, #paragraph2, #paragraph3 {
         padding: 2rem;
     }
-	
-	
-	
+   
+   
+   
 } /* closes 768px+ */
+
+
+
+
 
 
 
@@ -67,10 +101,13 @@ You can change the pixel number below */
 /* New CSS for desktop sizes.
 You can change the pixel number below */
 @media all and (min-width: 1024px) {
-	#paragraph1, #paragraph2, #paragraph3 {
+    #paragraph1, #paragraph2, #paragraph3 {
         padding: 5rem;
     }
-	
-	
-	
+    #img1, #img2, #img3 {
+        height: 100vh;
+    }
+   
+   
 } /* closes 1024px+ */
+

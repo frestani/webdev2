@@ -9,7 +9,7 @@
 <body>
   <header>
     <h1>Deaf Culture: Francesca Restani</h1>
-  </header>   
+  </header>  
   <main>
     <div id="img1"></div>
     <section id="paragraph1">
@@ -28,21 +28,66 @@
 </footer>
 </body>
   <!-- Link to jQuery on Google CDN-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 
 
   <!-- Container for your jQuery code -->
   <script>
-  $(document).ready(function() {
+   $(document).ready(function() {
+
+//allow scroll detection in realtime
+$(window).scroll(function() {
+
+	//This will detect how far the top of the window is from the top of the document
+	var windowPosition = $(window).scrollTop();
+
+  if (windowPosition>900 && windowPosition<2500) {
+    $('section').addClass(newFont);
+    $('section').addClass(newFontSize);
+  }
+  else {
+    $('section').removeClass(newFont);
+    $('section').removeClass(newFontSize);
+  }
+
+  if (windowPosition>600 && windowPosition<2500) {
+    $('#paragraph1').css("color", "peachpuff");
+    $('#paragraph1').css("background", "blueviolet");
+  }
+  else {
+    $('#paragraph1').css("background", "white");
+  }
+
+});//close .scroll()
+   });//close .ready()
+  </script>
+
+  <!--<script>
+    $(document).ready(function() {
+ $('#paragraph1').scroll(function() {
+  $('#paragraph1').css("color", "peachpuff");
+  $('#paragraph1').css("background", "blueviolet");
+ });
+});
+  </script>-->
   
+  <!--
+  <script>
+  $(document).ready(function() {
+ 
   //allow scroll detection in realtime
   $(window).scroll(function() {
-  
+ 
   //This will detect how far the top of the window is from the top of the document
   var windowPosition = $(window).scrollTop();
-  
-  
-  
+
+  $('#paragraph1').scroll(function() {
+ 
+ //This will detect how far the top of the window is from the top of the document
+ var p1ColorScroll = $('#paragraph1').scrollTop();
+ 
   /*
   if (windowPosition>1500) {
   $('section').css('background','red');
@@ -50,34 +95,36 @@
   $('section').css('background','black');
   } //close if statement
   */
-  
+ 
   //An alternate approach, but with a nice CSS animation
-  if (windowPosition>1500) {
+  /*if (windowPosition>1500) {
     $('section').addClass('red');
   } else {
     $('section').removeClass('red');
   }//close if/else statement
-  
-  
-  
-  
-  
+ 
+ 
+ 
+ 
+ 
   //detect position of particular element to trigger a function
   var elementOffset = $('#paragraph1').offset().top;
   var currentElementOffset = (elementOffset - windowPosition);
-  
+ 
   if (currentElementOffset<40) {
     $('#img2 h2').fadeOut();
   } else {
     $('#img2 h2').fadeIn();
-  }//close if/else statement
-  
-  
-  
+  }//close if/else statement*/
+ 
+ 
+ 
   });// close .scroll
-  
-  
-  
+ 
+ 
+ 
   }); //close .ready()
   </script>
+-->
 </html>
+
