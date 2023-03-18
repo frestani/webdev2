@@ -34,31 +34,45 @@
 
 
   <!-- Container for your jQuery code -->
-  <script>
-   $(document).ready(function() {
-
+<script>
+$(document).ready(function() {
+  $('#paragraph1').hide();
 //allow scroll detection in realtime
 $(window).scroll(function() {
-  $('section').hide();
+  
 
 	//This will detect how far the top of the window is from the top of the document
 	var windowPosition = $(window).scrollTop();
 
-  if (windowPosition>900 && windowPosition<2500) {
-    $('section').addClass('newFont');
-    $('section').hide('slow', 'linear');
+  if (windowPosition>1000) {
+    $('#paragraph1').addClass('newFont');
+    $('#paragraph1').hide('slow', 'linear');
   }
   else {
-    $('section').removeClass('newFont');
-    $('section').show('fast', 'linear');
+    $('#paragraph1').removeClass('newFont');
+    $('#paragraph1').show('fast', 'linear');
+  }
+
+  if (windowPosition>1700) {
+    $('#paragraph2').addClass('newFont');
+    $('#paragraph2').hide('slow', 'linear');
+  }
+  else {
+    $('#paragraph2').removeClass('newFont');
+    $('#paragraph2').show('fast', 'linear');
   }
 
   if (windowPosition>600 && windowPosition<2500) {
     $('#paragraph1').css("color", "peachpuff");
     $('#paragraph1').css("background", "blueviolet");
+
+    $('#paragraph2').css("color", "peachpuff");
+    $('#paragraph2').css("background", "blueviolet");
   }
   else {
     $('#paragraph1').css("background", "white");
+
+    $('#paragraph2').css("background", "white");
   }
 
 
