@@ -1,12 +1,16 @@
+header{
+    background-color: bisque;
+}
+
 .quotes{
     color: rgb(52, 158, 190);
     font-weight: bold;
     font-size: 1.25em;
 }
 
-body {
-    background-image: url("religion-bg.jpg");
-  }
+body{
+    background-image: url("final-project/img/religion-bg.jpg");
+}
 
 section{
     padding: 5rem;
