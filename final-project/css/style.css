@@ -28,11 +28,67 @@ section{
     margin: 4rem 15rem 4rem 15rem;
 }
 
+#intro{
+    margin: auto;
+}
+
 p{
     font-family: 'Comme', sans-serif;
     text-indent: 2rem;
     color: rgb(43, 10, 126);
     font-size: 1.25em;
 }
+
+.card{
+    background-color: white;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+.container{
+    width: 100%;
+}
+
+.card{
+    display: block;
+}
+
+img{
+    width: 40%;
+}
+	
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	
+	
+	
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+
+} /* closes 1024px+ */
 
 
