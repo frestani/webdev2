@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap');
 
 body{
-    background-image: url("final-project/img/religion-bg.jpg");
+    background-image: url("/img/religion-bg.jpg");
 }
 
 header > h1{
