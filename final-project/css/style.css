@@ -1,24 +1,38 @@
-header{
-    background-color: bisque;
-}
-
-.quotes{
-    color: rgb(52, 158, 190);
-    font-weight: bold;
-    font-size: 1.25em;
-}
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap');
 
 body{
     background-image: url("final-project/img/religion-bg.jpg");
 }
 
+header > h1{
+    background-color: bisque;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 5em;
+    margin: 0px;
+    padding: 0px;
+    height: 3em;
+}
+
+header > h2{
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.quotes{
+    color: rgb(52, 158, 190);
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
 section{
-    padding: 5rem;
+    margin: 4rem 15rem 4rem 15rem;
 }
 
 p{
+    font-family: 'Comme', sans-serif;
+    text-indent: 2rem;
     color: rgb(43, 10, 126);
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 
