@@ -32,10 +32,10 @@ header  nav{
 
 button {
     display: inline-block;
-    background-color: #7b38d8;
+    background-color: rgb(168, 123, 19);
     padding: 20px;
     width: 200px;
-    color: #ffffff;
+    color: black;
     text-align: center;
     border: 4px double #cccccc;
     border-radius: 10px;
@@ -48,10 +48,12 @@ button {
     transition: all 0.5s; /* add this line */
   }
   button:hover {
-    background-color: green;
+    background-color: rgb(242, 182, 17);
+    color: #ffffff;
   }
+
 .quotes{
-    color: rgb(52, 158, 190);
+    color: rgb(88, 181, 7);
     font-weight: bold;
     font-size: 1.75em;
 }
@@ -67,7 +69,7 @@ section{
 p{
     font-family: 'Comme', sans-serif;
     text-indent: 2rem;
-    color: rgb(43, 10, 126);
+    color: rgb(3, 82, 8);
     font-size: 1.25em;
 }
 
