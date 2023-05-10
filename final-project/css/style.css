@@ -2,22 +2,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap');
 
 body{
-    background-image: url("/img/religion-bg.jpg");
+    background-image: url("/img/religion-bg.png");
 }
 
-header > h1{
+header {
     background-color: bisque;
-    font-family: 'Ysabeau', sans-serif;
-    font-size: 5em;
     margin: 0px;
     padding: 0px;
-    height: 3em;
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    align-items: center;
+}
+header  h1{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 5em; 
 }
 
-header > h2{
+header  h2{
     font-family: 'Ysabeau', sans-serif;
 }
 
+header  nav{
+    display: flex;
+    flex-flow: row;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+button {
+    display: inline-block;
+    background-color: #7b38d8;
+    padding: 20px;
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+}
 .quotes{
     color: rgb(52, 158, 190);
     font-weight: bold;
@@ -41,14 +61,43 @@ p{
 
 .card{
     background-color: white;
+    border-radius: .25rem;
     width: 40%;
     display: flex;
-    align-items: center;
+    flex-flow: row;
+    
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
     
+    
+}
+
+.container{
+    border: .1rem solid red;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.container  h1{
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.card  figure{
+    border: .1rem solid blue;
+}
+
+figure{
+    width: 15rem;
+}
+
+figure > img{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
 }
 
 /* ========================================
@@ -60,10 +109,6 @@ You can adjust the min-width numbers below, and add as many new media queries as
 @media all and (min-width: 481px) {
 .container{
     width: 100%;
-}
-
-.card{
-    display: block;
 }
 
 img{
