@@ -33,6 +33,7 @@ header  nav{
 button {
     display: inline-block;
     background-color: rgb(168, 123, 19);
+    font-family: 'Ysabeau', sans-serif;
     padding: 20px;
     width: 200px;
     color: black;
@@ -53,7 +54,7 @@ button {
   }
 
 .quotes{
-    color: rgb(88, 181, 7);
+    color: rgb(255, 221, 0);
     font-weight: bold;
     font-size: 1.75em;
 }
@@ -69,13 +70,13 @@ section{
 p{
     font-family: 'Comme', sans-serif;
     text-indent: 2rem;
-    color: rgb(3, 82, 8);
+    color: black;
     font-size: 1.25em;
 }
 
 .card{
     background-color: white;
-    border-radius: .25rem;
+    border-radius: .5rem;
     width: 40%;
     display: flex;
     flex-flow: row;
@@ -89,7 +90,7 @@ p{
 }
 
 .container{
-    border: .1rem solid red;
+    /*border: .1rem solid red;*/
     text-align: center;
     display: flex;
     flex-flow: column;
@@ -101,7 +102,8 @@ p{
 }
 
 .card  figure{
-    border: .1rem solid blue;
+    /*border: .1rem solid blue;*/
+    
 }
 
 figure{
@@ -112,6 +114,7 @@ figure > img{
     object-fit: fill;
     height: 100%;
     width: 100%;
+    border-radius: .5rem; 
 }
 
 /* ========================================
