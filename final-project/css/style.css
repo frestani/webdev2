@@ -2,17 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap');
 
 body{
-    background-image: url("/img/religion-bg.png");
+    background-image: url("img/religion-bg.png");
 }
 
 header {
     background-color: rgb(188, 144, 39);
-    margin: 0px;
-    padding: 0px;
     display: flex;
     flex-flow: column;
-    height: auto;
     align-items: center;
+    width: auto;
 }
 header  h1{
     font-family: 'Ysabeau', sans-serif;
@@ -23,11 +21,19 @@ header  h2{
     font-family: 'Ysabeau', sans-serif;
 }
 
-header  nav{
+header nav{
+    border: .1rem solid blue;
     display: flex;
     flex-flow: row;
     gap: 2rem;
     margin: 2rem 0;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Credit: W3 Schools */
@@ -73,29 +79,26 @@ p{
     text-indent: 2rem;
     color: black;
     font-size: 1.25em;
+    min-width: 20rem;
 }
 
 .card{
+    border: .1rem solid red;
     background-color: white;
     border-radius: .5rem;
-    width: 40%;
     display: flex;
     flex-flow: row;
-    
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    
+    align-items: center;
+    justify-content: center;
     
 }
 
 .container{
-    /*border: .1rem solid red;*/
+    border: .1rem solid blue;
     text-align: center;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .container  h1{
@@ -104,7 +107,12 @@ p{
 
 .card  figure{
     /*border: .1rem solid blue;*/
-    
+    margin: 1rem 0 1rem 1rem;
+}
+
+.card .container{
+    width: 20rem;
+    margin: 0 1rem;
 }
 
 figure{
@@ -125,26 +133,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for iPads and tablets.  */
 @media all and (min-width: 481px) {
-.container{
-    width: 100%;
-}
 
-img{
-    width: 80%;
-}
-
-p{
-    padding: 0rem;
-    display: block;
-}
-
-.interview{
-    display: block;
-    width: 100%;
-    padding: 0rem;
-}
-	
-	
 	
 } /* closes 481px+ */
 
