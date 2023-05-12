@@ -30,10 +30,11 @@ header  nav{
     margin: 2rem 0;
 }
 
+/* Credit: W3 Schools */
 button {
     display: inline-block;
     background-color: rgb(168, 123, 19);
-    font-family: 'Ysabeau', sans-serif;
+    font-family: 'Comme', sans-serif;
     padding: 20px;
     width: 200px;
     color: black;
@@ -129,7 +130,16 @@ You can adjust the min-width numbers below, and add as many new media queries as
 }
 
 img{
-    width: 40%;
+    width: 80%;
+}
+
+p{
+    padding: 0rem;
+}
+
+.interview{
+    width: 100%;
+    padding: 0rem;
 }
 	
 	
