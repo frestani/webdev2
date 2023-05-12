@@ -135,9 +135,11 @@ img{
 
 p{
     padding: 0rem;
+    display: block;
 }
 
 .interview{
+    display: block;
     width: 100%;
     padding: 0rem;
 }
