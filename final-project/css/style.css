@@ -22,7 +22,7 @@ header  h2{
 }
 
 header nav{
-    border: .1rem solid blue;
+    /*border: .1rem solid blue;*/
     display: flex;
     flex-flow: row;
     gap: 2rem;
@@ -83,7 +83,7 @@ p{
 }
 
 .card{
-    border: .1rem solid red;
+    /*border: .1rem solid red;*/
     background-color: white;
     border-radius: .5rem;
     display: flex;
@@ -94,7 +94,7 @@ p{
 }
 
 .container{
-    border: .1rem solid blue;
+    /*border: .1rem solid blue;*/
     text-align: center;
     display: flex;
     flex-flow: column;
@@ -133,7 +133,13 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for iPads and tablets.  */
 @media all and (min-width: 481px) {
-
+    main{
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 	
 } /* closes 481px+ */
 
